@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Poppins:wght@400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #ff30d1;
+  --primary-color-fade: #b2098d9d;
+  --item-width: 50%;
+}
+
+::selection {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serfif;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+#homeBtn {
+  grid-column: 1;
+  margin-right: auto;
+  transition: all 0.2s ease-in-out;
+}
+
+#homeBtn:hover {
+  transform: scale(1.1);
+}
+
+nav img {
+  padding: 10px;
+  max-width: 80px;
+}
+
+nav ul {
+  grid-column: 2;
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  text-wrap: nowrap;
+}
+
+nav ul li a,
+nav ul li,
+footer ul li,
+footer ul li a {
+  font-family: "Poppins", sans-serif;
+  font-size: small;
+  color: rgb(43, 43, 43);
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+footer ul li :hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+nav ul li a:hover {
+  color: #ff30d1;
+}
+
+nav ul li:hover {
+  transform: scale(1.1);
+}
+
+nav button {
+  padding: 20px;
+  border: 0;
+  border-radius: 20px;
+  background-color: var(--primary-color);
+  color: #fff;
+  box-shadow: 2px 2px 5px #00000038;
+  font-family: "Poppins", sans-serif;
+  font-size: small;
+  transition: all 0.2s ease-in-out;
+}
+
+nav button:hover {
+  opacity: 0.7;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.btnWrapper {
+  display: flex;
+  margin-right: 20px;
+  margin-left: auto;
+  gap: 10px;
+  align-items: end;
+  justify-content: end;
+}
+
+#propertiesBtn {
+  width: 160px;
+  margin-left: auto;
+}
+
+#menuBtn {
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  display: none;
+}
+
+#menuBtn > div {
+    letter-spacing: 1.5px;
+    font-size: medium;
+    transform: rotate(90deg);
+    transition: all .2s ease-in-out;
+}
+
+.dropDown {
+  padding: 10px;
+  position: absolute;
+  right: -100vw;
+  background-color: #fff;
+  border-radius: 0 0 0 10px;
+  width: 30%;
+  text-align: center;
+  line-height: 3.5;
+  transition: all 0.4s;
+}
+
+.dropDown ul {
+  list-style: none;
+  gap: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
+.dropDown ul li {
+    transition: all .2s ease-in-out;
+}
+
+.dropDown ul li:hover {
+    color: var(--primary-color);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+main {
+  display: grid;
+  height: 85vh;
+}
+
+.content {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url(./images/IPS190008_08_l_gal.jpg);
+  background-size: cover;
+  height: 100%;
+}
+
+.heroWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: auto;
+  margin-top: 10%;
+  gap: 20px;
+}
+
+.content .heroWrapper img {
+  width: 50%;
+  align-self: center;
+  justify-self: center;
+}
+
+.content .heroWrapper h1 {
+  background-color: var(--primary-color-fade);
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  font-weight: 500;
+  font-size: 3vw; /* Browsers that do not support "MIN () - MAX ()" and "Clamp ()" functions will take this value.*/
+  font-size: max(3vw, min(30px, 70px)); /* Browsers that do not support the "clamp ()" function will take this value. */
+  font-size: clamp(30px, 3vw, 70px);
+  max-width: 20ch;
+  margin-bottom: auto;
+  align-self: center;
+}
+
+.gwj {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  bottom: 0;
+  right: 0;
+  float: right;
+  border-radius: 10px;
+  margin: 10px;
+  margin-bottom: 30px;
+  background-color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.gwj p {
+  margin-left: auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.gwj p span {
+  color: hsl(46, 100%, 62%);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.gwj img {
+  max-width: 30px;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+
+.gwj:hover {
+  background-color: hsl(0, 0%, 15%);
+  color: white;
+}
+
+.customerBtnWrapper {
+  height: 100px;
+  width: 100%;
+  padding: 20px;
+  margin-top: -67px;
+  display: flex;
+  gap: 10%;
+  align-items: center;
+  justify-content: center;
+}
+
+.customerBtn {
+  border: 0;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #fff;
+  color: var(--primary-color);
+  font-family: "Playfair Display", sans-serif;
+  font-size: xx-large;
+  transition: all 0.2s ease-in-out;
+}
+
+.customerBtn:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.187);
+  margin-top: -50px;
+  cursor: pointer;
+}
+
+footer {
+  display: grid;
+}
+
+.awardsWrapper {
+  grid-column: span 3;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+.award {
+  width: 10%;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+
+.resourceWrapper {
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  text-align: left;
+  gap: 50px;
+  padding: 20px;
+}
+
+.resourceWrapper {
+  text-align: center;
+  background-color: var(--primary-color-fade);
+  border-radius: 20px;
+  margin: 10px;
+  color: #fff;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer p,
+footer ul li,
+footer ul li a {
+  font-size: x-small;
+  color: #fff;
+  line-height: 20px;
+}
+
+h4 ~ p,
+h4 ~ ul {
+  padding-top: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    display: flex;
+  }
+
+  #menuBtn {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .customerBtn {
+    font-size: large;
+  }
+
+  .resourceWrapper ul li {
+    max-width: 17ch;
+    word-break: break-all;
+  }
+}
