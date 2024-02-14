@@ -19,7 +19,8 @@
 
 html, body {
   overflow-x: hidden;
-
+}
+  
 .siteWrapper {
   overflow-x: hidden;
   position: relative;
