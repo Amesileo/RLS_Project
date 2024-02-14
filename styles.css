@@ -351,4 +351,8 @@ h4 ~ ul {
     max-width: 17ch;
     word-break: break-all;
   }
+
+  main {
+    height: 70vh;
+  }
 }
