@@ -330,7 +330,105 @@ h4 ~ ul {
   padding-top: 10px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 200px) and (orientation: portrait) {
+    nav {
+      display: flex;
+    }
+  
+    #menuBtn {
+      display: block;
+    }
+  
+    nav ul {
+      display: none;
+    }
+  
+    .customerBtn {
+      font-size: 18px;
+    }
+  
+    .resourceWrapper ul li {
+      max-width: 17ch;
+      word-break: break-all;
+    }
+
+    .heroWrapper img {
+        margin-top: 20%;
+        max-width: 35%;
+    }
+    
+    #title-text {
+        font-size: 20px;
+    }
+  
+    main {
+      height: 70vh;
+    }
+}
+
+@media only screen and (min-width: 430px) and (orientation: portrait) {
+    nav {
+      display: flex;
+    }
+  
+    #menuBtn {
+      display: block;
+    }
+  
+    nav ul {
+      display: none;
+    }
+  
+    .customerBtn {
+      font-size: 20px;
+    }
+  
+    .resourceWrapper ul li {
+      max-width: 17ch;
+      word-break: break-all;
+    }
+  
+    main {
+      height: 70vh;
+    }
+}
+
+@media only screen and (min-width: 767px) and (orientation: portrait) {
+    nav {
+      display: flex;
+    }
+  
+    #menuBtn {
+      display: block;
+    }
+  
+    nav ul {
+      display: none;
+    }
+  
+    .customerBtn {
+      font-size: 20px;
+    }
+  
+    .resourceWrapper ul li {
+      max-width: 17ch;
+      word-break: break-all;
+    }
+
+    .heroWrapper img {
+        max-width: 35%;
+    }
+    
+    #title-text {
+        font-size: 20px;
+    }
+  
+    main {
+      height: 70vh;
+    }
+  }
+
+@media only screen and (min-width: 768px) and (orientation: portrait) {
   nav {
     display: flex;
   }
@@ -352,7 +450,143 @@ h4 ~ ul {
     word-break: break-all;
   }
 
+  .heroWrapper img {
+    margin-top: 15%;
+}
+
+#title-text {
+    font-size: 50px;
+}
+
   main {
     height: 70vh;
   }
 }
+
+@media only screen and (min-width: 1020px) and (orientation: portrait) {
+    nav {
+      display: flex;
+    }
+  
+    #menuBtn {
+      display: block;
+    }
+  
+    nav ul {
+      display: none;
+    }
+  
+    .customerBtn {
+      font-size: xx-large;
+    }
+  
+    .resourceWrapper ul li {
+      max-width: 17ch;
+      word-break: break-all;
+    }
+  
+    main {
+      height: 80vh;
+    }
+
+    .heroWrapper img {
+        margin-top: 15%;
+    }
+
+    #title-text {
+        font-size: 54px;
+    }
+  }
+
+@media only screen and (min-width: 500px) and (orientation: landscape) {
+    nav {
+      display: flex;
+    }
+  
+    #menuBtn {
+      display: block;
+    }
+  
+    nav ul {
+      display: none;
+    }
+  
+    .customerBtn {
+      font-size: large;
+    }
+  
+    .resourceWrapper ul li {
+      max-width: 17ch;
+      word-break: break-all;
+    }
+  
+    main {
+      height: 70vh;
+    }
+
+    .heroWrapper {
+        width: 50%;
+        align-self: center;
+        justify-self: center;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #title-text {
+        font-size: 24px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .customerBtnWrapper {
+        gap: 20%;
+        margin-top: -50px;
+    }
+  }
+
+  @media only screen and (min-width: 1000px) and (orientation: landscape) {
+    nav {
+      display: flex;
+    }
+  
+    #menuBtn {
+      display: block;
+    }
+  
+    nav ul {
+      display: none;
+    }
+  
+    .customerBtn {
+      font-size: large;
+    }
+  
+    .resourceWrapper ul li {
+      max-width: 17ch;
+      word-break: break-all;
+    }
+  
+    main {
+      height: 70vh;
+    }
+
+    .heroWrapper {
+        width: 70%;
+        align-self: center;
+        justify-self: center;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 15%;
+    }
+
+    #title-text {
+        font-size: 38px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .customerBtnWrapper {
+        gap: 20%;
+        margin-top: -50px;
+    }
+  }
