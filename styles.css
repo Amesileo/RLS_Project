@@ -44,6 +44,9 @@ nav {
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-items: center;
+  position: absolute;
+  width: 100vw;
+  background-color: #ffffffec;;
 }
 
 #homeBtn {
@@ -67,6 +70,9 @@ nav ul {
   list-style: none;
   gap: 30px;
   text-wrap: nowrap;
+  /* background-color: #ffffffec;; */
+  padding: 20px;
+  border-radius: 20px;
 }
 
 nav ul li a,
@@ -143,11 +149,12 @@ nav button:hover {
   padding: 10px;
   position: absolute;
   right: -100vw;
-  background-color: #fff;
-  border-radius: 0 0 0 10px;
+  background-color: #ffffffec;
+  border-radius: 10px 0 0 10px;
   width: 30%;
   text-align: center;
   line-height: 3.5;
+  margin-top: 90px;
   transition: all 0.4s;
 }
 
@@ -346,6 +353,11 @@ h4 ~ ul {
     .customerBtn {
       font-size: 18px;
     }
+
+    .resourceWrapper ul {
+      display: grid;
+      justify-content: center;
+    }
   
     .resourceWrapper ul li {
       max-width: 17ch;
@@ -355,10 +367,6 @@ h4 ~ ul {
     .heroWrapper img {
         margin-top: 20%;
         max-width: 35%;
-    }
-    
-    #title-text {
-        font-size: 20px;
     }
   
     main {
@@ -418,10 +426,6 @@ h4 ~ ul {
     .heroWrapper img {
         max-width: 35%;
     }
-    
-    #title-text {
-        font-size: 20px;
-    }
   
     main {
       height: 70vh;
@@ -452,10 +456,6 @@ h4 ~ ul {
 
   .heroWrapper img {
     margin-top: 15%;
-}
-
-#title-text {
-    font-size: 50px;
 }
 
   main {
@@ -506,6 +506,16 @@ h4 ~ ul {
     #menuBtn {
       display: block;
     }
+
+    #propertiesBtn, #menuBtn {
+      width: fit-content;
+      height: 45px;
+      padding: 10px;
+    }
+
+    #nav-logo {
+      width: 80%;
+    }
   
     nav ul {
       display: none;
@@ -514,6 +524,11 @@ h4 ~ ul {
     .customerBtn {
       font-size: large;
     }
+
+    .resourceWrapper ul {
+      display: grid;
+      justify-content: center;
+    }
   
     .resourceWrapper ul li {
       max-width: 17ch;
@@ -521,20 +536,19 @@ h4 ~ ul {
     }
   
     main {
-      height: 70vh;
+      height: 90vh;
     }
 
     .heroWrapper {
-        width: 50%;
+        width: 60%;
         align-self: center;
         justify-self: center;
         flex-direction: row;
         justify-content: center;
+        margin-top:14%;
     }
 
     #title-text {
-        font-size: 24px;
-        width: 100%;
         margin: 0;
     }
 
@@ -544,21 +558,21 @@ h4 ~ ul {
     }
   }
 
-  @media only screen and (min-width: 1000px) and (orientation: landscape) {
+  @media only screen and (min-width: 950px) and (orientation: landscape) {
     nav {
       display: flex;
     }
   
     #menuBtn {
-      display: block;
-    }
-  
-    nav ul {
       display: none;
     }
   
+    nav ul {
+      display: flex;
+    }
+  
     .customerBtn {
-      font-size: large;
+      font-size: xx-large;
     }
   
     .resourceWrapper ul li {
@@ -567,7 +581,7 @@ h4 ~ ul {
     }
   
     main {
-      height: 70vh;
+      height: 85vh;
     }
 
     .heroWrapper {
@@ -577,12 +591,6 @@ h4 ~ ul {
         flex-direction: row;
         justify-content: center;
         margin-top: 15%;
-    }
-
-    #title-text {
-        font-size: 38px;
-        width: 100%;
-        margin: 0;
     }
 
     .customerBtnWrapper {
