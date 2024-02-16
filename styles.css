@@ -247,11 +247,12 @@ main {
   padding: 10px;
   margin-left: 10px;
   margin-right: 10px;
-  display: inline-grid;
-  display: -moz-inline-grid;
-  display: -ms-inline-grid; /* compatibility */
+  display: inline-flex;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox; /* compatibility */
   flex-direction: column;
   white-space: wrap;
+  text-wrap: wrap;
   text-align: center;
   width: 250px;
   height: 250px;
