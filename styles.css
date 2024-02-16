@@ -247,7 +247,9 @@ main {
   padding: 10px;
   margin-left: 10px;
   margin-right: 10px;
-  display: inline-flex;
+  display: inline-grid;
+  display: -moz-inline-grid;
+  display: -ms-inline-grid; /* compatibility */
   flex-direction: column;
   white-space: wrap;
   text-align: center;
