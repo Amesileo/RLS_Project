@@ -224,6 +224,8 @@ main {
   align-items: center;
   justify-content: center;
   background-color: transparent;
+  overflow-x: scroll;
+  scroll-snap-type: mandatory;
 }
 
 .reviewSection p {
@@ -234,29 +236,30 @@ main {
 
 .reviewWrapper {
   overflow-x: scroll;
-  overflow-y: visible;
-  white-space: nowrap;
+  display: inline-flex;
+  width: 200%;
   padding: 20px;
 }
 
 .review {
-  display: inline-block;
   border-radius: 20px;
   background-color: var(--primary-color-fade);
   color: #fff;
   padding: 10px;
   margin-left: 10px;
   margin-right: 10px;
-  display: inline-flex;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox; /* compatibility */
+  display: inline-flex; /* compatibility */
   flex-direction: column;
-  white-space: wrap;
-  text-wrap: wrap;
   text-align: center;
+  white-space: wrap;
   width: 250px;
   height: 250px;
   transition: all .2s ease-in-out;
+  scroll-margin-inline: 0;
+}
+
+.review p {
+  
 }
 
 .review:hover {
