@@ -249,9 +249,8 @@ main {
   margin-right: 10px;
   display: inline-flex;
   flex-direction: column;
-  align-items: center;
-  text-wrap: wrap;
-  overflow-wrap: break-word; /* for Safari and Firefox support */
+  white-space: wrap;
+  text-align: center;
   width: 250px;
   height: 250px;
   transition: all .2s ease-in-out;
