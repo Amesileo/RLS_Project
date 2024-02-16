@@ -219,25 +219,25 @@ main {
   align-self: center;
 }
 
+#googleTitle {
+  text-align: center;
+}
+
 .reviewSection {
   display: grid;
   align-items: center;
   justify-content: center;
-  background-color: transparent;
   overflow-x: scroll;
-  scroll-snap-type: mandatory;
 }
 
 .reviewSection p {
   text-align: center;
-  background-color: transparent;
-  display: non;
 }
 
 .reviewWrapper {
   overflow-x: scroll;
   display: inline-flex;
-  width: 200%;
+  min-width: 100%;
   padding: 20px;
 }
 
@@ -252,14 +252,11 @@ main {
   flex-direction: column;
   text-align: center;
   white-space: wrap;
-  width: 250px;
+  min-width: 240px;
+  max-width: 280px;
   height: 250px;
   transition: all .2s ease-in-out;
   scroll-margin-inline: 0;
-}
-
-.review p {
-  
 }
 
 .review:hover {
@@ -525,7 +522,10 @@ h4 ~ ul {
 }
 
 @media only screen and (min-width: 1020px) and (orientation: portrait) {
-  
+    .reviewSection {
+      overflow-x: hidden;
+    }
+
     .customerBtn {
       font-size: xx-large;
     }
@@ -633,5 +633,11 @@ h4 ~ ul {
     .customerBtnWrapper {
         gap: 20%;
         margin-top: -50px;
+    }
+  }
+
+  @media only screen and (min-width: 1100px) and (orientation: landscape) {
+    .reviewSection {
+      overflow-x: hidden;
     }
   }
