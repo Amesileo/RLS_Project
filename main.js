@@ -14,7 +14,7 @@ menu.addEventListener("touchend", () => {
 let propertiesBtn = document.getElementById("propertiesBtn");
 
 propertiesBtn.addEventListener("click", () => {
-  window.location.href = "https://www.onthemarket.com/agents/branch/residential-lettings-specialists-ipswich/properties/?let-agreed=true&search-type=to-rent&view=grid";
+  goToProperties();
 });
 
 document.addEventListener("scroll", () => {
@@ -22,3 +22,28 @@ document.addEventListener("scroll", () => {
   menu.children[0].style.transform = "rotate(90deg)";
   show = 0;
 });
+
+let phoneBtn = document.getElementsByClassName("btnWrapper2")[0].children[0];
+let emailBtn = document.getElementsByClassName("btnWrapper2")[0].children[1];
+
+phoneBtn.addEventListener("click", () => {
+  window.location.href = "tel:01473400383";
+});
+
+emailBtn.addEventListener("click", () => {
+  window.location.href = "mailto:info@residentiallettingsspecialists.com";
+});
+
+let otmBtn = document.getElementsByClassName("award")[3];
+
+otmBtn.addEventListener("mouseover", () => {
+  otmBtn.style.cursor = "pointer";
+})
+
+otmBtn.addEventListener("click", () => {
+  goToProperties();
+});
+
+function goToProperties() {
+  window.location.href = "https://www.onthemarket.com/agents/branch/residential-lettings-specialists-ipswich/properties/?let-agreed=true&search-type=to-rent&view=grid";
+}

@@ -219,6 +219,58 @@ main {
   align-self: center;
 }
 
+.reviewSection {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.reviewSection p {
+  text-align: center;
+  background-color: transparent;
+  display: non;
+}
+
+.reviewWrapper {
+  overflow-x: scroll;
+  overflow-y: visible;
+  white-space: nowrap;
+  padding: 20px;
+}
+
+.review {
+  display: inline-block;
+  border-radius: 20px;
+  background-color: var(--primary-color-fade);
+  color: #fff;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  text-wrap: wrap;
+  width: 250px;
+  height: 250px;
+  transition: all .2s ease-in-out;
+}
+
+.review:hover {
+  transform: translateY(-20px);
+}
+
+.googleReviews {
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+}
+
+.googleReviews:hover {
+  color: var(--primary-color);
+  font-size: large;
+  cursor: pointer;
+}
+
 .gwj {
   display: flex;
   align-items: center;
@@ -292,19 +344,11 @@ main {
   margin-left: 10%;
   margin-right: 10%;
   display: grid;
-  background-color: var(--primary-color-fade);
+  border: solid 2px var(--primary-color-fade);
   border-radius: 20PX;
 }
 
-#about h1 {
-  color: #fff;
-  font-size: xx-large;
-  justify-self: center;
-  align-self: center;
-}
-
 #about p {
-  color: #fff;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -324,6 +368,31 @@ main {
   font-weight: 500;
 }
 
+.btnWrapper2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactBtn {
+  border: solid 2px var(--primary-color);
+  border-radius: 20px;
+  padding: 20px;
+  width: 160px;
+  color: var(--primary-color);
+  background-color: #fff;
+  justify-self: center;
+  margin: 10px;
+  font-size: medium;
+  transition: all .2s ease-in-out;
+}
+
+.contactBtn:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+}
+
 footer {
   display: grid;
 }
@@ -340,6 +409,11 @@ footer {
   width: 10%;
   aspect-ratio: 1/1;
   object-fit: contain;
+  transition: all .2s ease-in-out;
+}
+
+.award:hover {
+  transform: scale(1.1) translateY(-10px);
 }
 
 .resourceWrapper {
