@@ -9,6 +9,7 @@
 :root {
   --primary-color: #ff30d1;
   --primary-color-fade: #b2098d9d;
+  --text-col: #292929;
   --item-width: 50%;
 }
 
@@ -19,6 +20,7 @@
 
 html, body {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
   
 .siteWrapper {
@@ -284,6 +286,44 @@ main {
   cursor: pointer;
 }
 
+#about {
+  padding: 20px;
+  margin: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: grid;
+  background-color: var(--primary-color-fade);
+  border-radius: 20PX;
+}
+
+#about h1 {
+  color: #fff;
+  font-size: xx-large;
+  justify-self: center;
+  align-self: center;
+}
+
+#about p {
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.quote {
+  color: var(--primary-color);
+  background-color: #fff;
+  padding: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.quote h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
 footer {
   display: grid;
 }
@@ -345,6 +385,11 @@ h4 ~ ul {
     #menuBtn {
       display: block;
     }
+
+    #propertiesBtn {
+      font-size: small;
+      padding: 19px;
+    }
   
     nav ul {
       display: none;
@@ -375,126 +420,38 @@ h4 ~ ul {
 }
 
 @media only screen and (min-width: 430px) and (orientation: portrait) {
-    nav {
-      display: flex;
-    }
-  
-    #menuBtn {
-      display: block;
-    }
-  
-    nav ul {
-      display: none;
-    }
   
     .customerBtn {
       font-size: 20px;
-    }
-  
-    .resourceWrapper ul li {
-      max-width: 17ch;
-      word-break: break-all;
-    }
-  
-    main {
-      height: 70vh;
     }
 }
 
 @media only screen and (min-width: 767px) and (orientation: portrait) {
-    nav {
-      display: flex;
-    }
-  
-    #menuBtn {
-      display: block;
-    }
-  
-    nav ul {
-      display: none;
-    }
-  
-    .customerBtn {
-      font-size: 20px;
-    }
-  
-    .resourceWrapper ul li {
-      max-width: 17ch;
-      word-break: break-all;
-    }
 
     .heroWrapper img {
         max-width: 35%;
     }
-  
-    main {
-      height: 70vh;
-    }
   }
 
 @media only screen and (min-width: 768px) and (orientation: portrait) {
-  nav {
-    display: flex;
-  }
-
-  #menuBtn {
-    display: block;
-  }
-
-  nav ul {
-    display: none;
-  }
 
   .customerBtn {
     font-size: large;
   }
 
-  .resourceWrapper ul li {
-    max-width: 17ch;
-    word-break: break-all;
-  }
-
   .heroWrapper img {
     margin-top: 15%;
 }
-
-  main {
-    height: 70vh;
-  }
 }
 
 @media only screen and (min-width: 1020px) and (orientation: portrait) {
-    nav {
-      display: flex;
-    }
-  
-    #menuBtn {
-      display: block;
-    }
-  
-    nav ul {
-      display: none;
-    }
   
     .customerBtn {
       font-size: xx-large;
     }
   
-    .resourceWrapper ul li {
-      max-width: 17ch;
-      word-break: break-all;
-    }
-  
     main {
       height: 80vh;
-    }
-
-    .heroWrapper img {
-        margin-top: 15%;
-    }
-
-    #title-text {
-        font-size: 54px;
     }
   }
 
@@ -543,9 +500,9 @@ h4 ~ ul {
         width: 60%;
         align-self: center;
         justify-self: center;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
-        margin-top:14%;
+        margin-top: 25%;
     }
 
     #title-text {
@@ -590,7 +547,7 @@ h4 ~ ul {
         justify-self: center;
         flex-direction: row;
         justify-content: center;
-        margin-top: 15%;
+        margin-top: 25%;
     }
 
     .customerBtnWrapper {
