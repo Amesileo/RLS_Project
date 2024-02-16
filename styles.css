@@ -18,11 +18,12 @@
   color: #fff;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
-  
+
 .siteWrapper {
   overflow-x: hidden;
   position: relative;
@@ -48,7 +49,7 @@ nav {
   justify-items: center;
   position: absolute;
   width: 100vw;
-  background-color: #ffffffec;;
+  background-color: #ffffffec;
 }
 
 #homeBtn {
@@ -141,10 +142,10 @@ nav button:hover {
 }
 
 #menuBtn > div {
-    letter-spacing: 1.5px;
-    font-size: medium;
-    transform: rotate(90deg);
-    transition: all .2s ease-in-out;
+  letter-spacing: 1.5px;
+  font-size: medium;
+  transform: rotate(90deg);
+  transition: all 0.2s ease-in-out;
 }
 
 .dropDown {
@@ -167,13 +168,13 @@ nav button:hover {
 }
 
 .dropDown ul li {
-    transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .dropDown ul li:hover {
-    color: var(--primary-color);
-    transform: scale(1.1);
-    cursor: pointer;
+  color: var(--primary-color);
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 main {
@@ -212,7 +213,10 @@ main {
   color: white;
   font-weight: 500;
   font-size: 3vw; /* Browsers that do not support "MIN () - MAX ()" and "Clamp ()" functions will take this value.*/
-  font-size: max(3vw, min(30px, 70px)); /* Browsers that do not support the "clamp ()" function will take this value. */
+  font-size: max(
+    3vw,
+    min(30px, 70px)
+  ); /* Browsers that do not support the "clamp ()" function will take this value. */
   font-size: clamp(30px, 3vw, 70px);
   max-width: 20ch;
   margin-bottom: auto;
@@ -255,7 +259,7 @@ main {
   min-width: 240px;
   max-width: 280px;
   height: 250px;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   scroll-margin-inline: 0;
 }
 
@@ -265,7 +269,7 @@ main {
 
 .googleReviews {
   text-decoration: none;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .googleReviews:hover {
@@ -348,7 +352,7 @@ main {
   margin-right: 10%;
   display: grid;
   border: solid 2px var(--primary-color-fade);
-  border-radius: 20PX;
+  border-radius: 20px;
 }
 
 #about p {
@@ -387,7 +391,7 @@ main {
   justify-self: center;
   margin: 10px;
   font-size: medium;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .contactBtn:hover {
@@ -412,7 +416,7 @@ footer {
   width: 10%;
   aspect-ratio: 1/1;
   object-fit: contain;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .award:hover {
@@ -455,189 +459,187 @@ h4 ~ ul {
 }
 
 @media only screen and (min-width: 200px) and (orientation: portrait) {
-    nav {
-      display: flex;
-    }
-  
-    #menuBtn {
-      display: block;
-    }
+  nav {
+    display: flex;
+  }
 
-    #propertiesBtn {
-      font-size: small;
-      padding: 19px;
-    }
-  
-    nav ul {
-      display: none;
-    }
-  
-    .customerBtn {
-      font-size: 18px;
-    }
+  #menuBtn {
+    display: block;
+  }
 
-    .resourceWrapper ul {
-      display: grid;
-      justify-content: center;
-    }
-  
-    .resourceWrapper ul li {
-      max-width: 17ch;
-      word-break: break-all;
-    }
+  #propertiesBtn {
+    font-size: small;
+    padding: 19px;
+  }
 
-    .heroWrapper img {
-        margin-top: 20%;
-        max-width: 35%;
-    }
-  
-    main {
-      height: 70vh;
-    }
+  nav ul {
+    display: none;
+  }
+
+  .customerBtn {
+    font-size: 18px;
+  }
+
+  .resourceWrapper ul {
+    display: grid;
+    justify-content: center;
+  }
+
+  .resourceWrapper ul li {
+    max-width: 17ch;
+    word-break: break-all;
+  }
+
+  .heroWrapper img {
+    margin-top: 20%;
+    max-width: 35%;
+  }
+
+  main {
+    height: 70vh;
+  }
 }
 
 @media only screen and (min-width: 430px) and (orientation: portrait) {
-  
-    .customerBtn {
-      font-size: 20px;
-    }
+  .customerBtn {
+    font-size: 20px;
+  }
 }
 
 @media only screen and (min-width: 767px) and (orientation: portrait) {
-
-    .heroWrapper img {
-        max-width: 35%;
-    }
+  .heroWrapper img {
+    max-width: 35%;
   }
+}
 
 @media only screen and (min-width: 768px) and (orientation: portrait) {
-
   .customerBtn {
     font-size: large;
   }
 
   .heroWrapper img {
     margin-top: 15%;
-}
+  }
 }
 
 @media only screen and (min-width: 1020px) and (orientation: portrait) {
-    .reviewSection {
-      overflow-x: hidden;
-    }
-
-    .customerBtn {
-      font-size: xx-large;
-    }
-  
-    main {
-      height: 80vh;
-    }
+  .reviewSection {
+    overflow-x: hidden;
   }
+
+  .customerBtn {
+    font-size: xx-large;
+  }
+
+  main {
+    height: 80vh;
+  }
+}
 
 @media only screen and (min-width: 500px) and (orientation: landscape) {
-    nav {
-      display: flex;
-    }
-  
-    #menuBtn {
-      display: block;
-    }
-
-    #propertiesBtn, #menuBtn {
-      width: fit-content;
-      height: 45px;
-      padding: 10px;
-    }
-
-    #nav-logo {
-      width: 80%;
-    }
-  
-    nav ul {
-      display: none;
-    }
-  
-    .customerBtn {
-      font-size: large;
-    }
-
-    .resourceWrapper ul {
-      display: grid;
-      justify-content: center;
-    }
-  
-    .resourceWrapper ul li {
-      max-width: 17ch;
-      word-break: break-all;
-    }
-  
-    main {
-      height: 90vh;
-    }
-
-    .heroWrapper {
-        width: 60%;
-        align-self: center;
-        justify-self: center;
-        flex-direction: column;
-        justify-content: center;
-        margin-top: 25%;
-    }
-
-    #title-text {
-        margin: 0;
-    }
-
-    .customerBtnWrapper {
-        gap: 20%;
-        margin-top: -50px;
-    }
+  nav {
+    display: flex;
   }
 
-  @media only screen and (min-width: 950px) and (orientation: landscape) {
-    nav {
-      display: flex;
-    }
-  
-    #menuBtn {
-      display: none;
-    }
-  
-    nav ul {
-      display: flex;
-    }
-  
-    .customerBtn {
-      font-size: xx-large;
-    }
-  
-    .resourceWrapper ul li {
-      max-width: 17ch;
-      word-break: break-all;
-    }
-  
-    main {
-      height: 85vh;
-    }
-
-    .heroWrapper {
-        width: 70%;
-        align-self: center;
-        justify-self: center;
-        flex-direction: row;
-        justify-content: center;
-        margin-top: 25%;
-    }
-
-    .customerBtnWrapper {
-        gap: 20%;
-        margin-top: -50px;
-    }
+  #menuBtn {
+    display: block;
   }
 
-  @media only screen and (min-width: 1100px) and (orientation: landscape) {
-    .reviewSection {
-      overflow-x: hidden;
-    }
+  #propertiesBtn,
+  #menuBtn {
+    width: fit-content;
+    height: 45px;
+    padding: 10px;
   }
+
+  #nav-logo {
+    width: 80%;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .customerBtn {
+    font-size: large;
+  }
+
+  .resourceWrapper ul {
+    display: grid;
+    justify-content: center;
+  }
+
+  .resourceWrapper ul li {
+    max-width: 17ch;
+    word-break: break-all;
+  }
+
+  main {
+    height: 90vh;
+  }
+
+  .heroWrapper {
+    width: 60%;
+    align-self: center;
+    justify-self: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25%;
+  }
+
+  #title-text {
+    margin: 0;
+  }
+
+  .customerBtnWrapper {
+    gap: 20%;
+    margin-top: -50px;
+  }
+}
+
+@media only screen and (min-width: 950px) and (orientation: landscape) {
+  nav {
+    display: flex;
+  }
+
+  #menuBtn {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  .customerBtn {
+    font-size: xx-large;
+  }
+
+  .resourceWrapper ul li {
+    max-width: 17ch;
+    word-break: break-all;
+  }
+
+  main {
+    height: 85vh;
+  }
+
+  .heroWrapper {
+    width: 70%;
+    align-self: center;
+    justify-self: center;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 25%;
+  }
+
+  .customerBtnWrapper {
+    gap: 20%;
+    margin-top: -50px;
+  }
+}
+
+@media only screen and (min-width: 1100px) and (orientation: landscape) {
+  .reviewSection {
+    overflow-x: hidden;
+  }
+}
