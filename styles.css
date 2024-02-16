@@ -251,6 +251,7 @@ main {
   flex-direction: column;
   align-items: center;
   text-wrap: wrap;
+  overflow-wrap: break-word; /* for Safari and Firefox support */
   width: 250px;
   height: 250px;
   transition: all .2s ease-in-out;
