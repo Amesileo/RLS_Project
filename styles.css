@@ -575,7 +575,7 @@ h4 ~ ul {
   }
 
   main {
-    height: 90vh;
+    height: 120vh;
   }
 
   .heroWrapper {
@@ -584,7 +584,7 @@ h4 ~ ul {
     justify-self: center;
     flex-direction: column;
     justify-content: center;
-    margin-top: 25%;
+    margin-top: 15%;
   }
 
   #title-text {
